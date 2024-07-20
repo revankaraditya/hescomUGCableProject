@@ -28,8 +28,8 @@
 										</div-->
 										<!--Counter Starts -->
 										<div class="container">
-											<div class="row">
-												<div class="col-md-3 col-sm-6">
+											<div class="row flex-container">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter blue">
 														<div class="counter-icon">
 															<i class="fa fa-solid fa-file"></i>
@@ -39,7 +39,7 @@
 															class="counter-value"><?php echo $fault_total_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter orange">
 														<div class="counter-icon">
 															<i class="fa fa-light fa-file"></i>
@@ -49,7 +49,7 @@
 															class="counter-value"><?php echo $fault_ongoing_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter green">
 														<div class="counter-icon">
 															<i class="fa fa-duotone fa-file"></i>
@@ -65,9 +65,10 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="dflex h-50 flex-wrap"> 
+							<div class="col-md-4 ">
 								<!-- PIE CHART FOR OVERALL RESOLUTIONS-->
-								<div class="box box-danger">
+								<div class="box justify-content-center align-items-center box-danger">
 									<div class="box-header with-border">
 										<h3 class="box-title">Faults - Section Officer wise</h3>
 										<div class="box-tools pull-right">
@@ -129,6 +130,7 @@
 									<!-- /.box-body -->
 								</div>
 								<!-- /.box -->
+							</div>
 							</div>
 							<div class="col-lg-12 col-xs-12 col-md-12">
 								<div class="box box-warning">

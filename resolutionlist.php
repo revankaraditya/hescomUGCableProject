@@ -70,6 +70,28 @@ $login_query_result = db_one($loggen_in_query);
 		.hiddenRow {
 			padding: 0 !important;
 		}
+
+		@media (min-width: 1200px) {
+			.cont{
+				width: 100%;
+				font-size: inherit;
+			}
+		}
+
+		/* Adjustments for smaller screens */
+		@media (min-width: 768px) {
+			.cont{
+				width: 100%;
+				font-size: inherit;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.cont{
+				width: 100%;
+				font-size: inherit;
+			}
+		}
 	</style>
 </head>
 
@@ -88,7 +110,7 @@ $login_query_result = db_one($loggen_in_query);
 				</div>
 				<div class="row">
 					<section class="col-lg-12 connectedSortable">
-							<div class="col-md-12 col-lg-12 col-sm-4">
+							<div class="col-md-12 col-lg-12 col-sm-4 cont">
 								<div class="nav-tabs-custom">
 									<ul class="nav nav-tabs">
 										<li class="active"><a href="#on-going" data-toggle="tab"> On-going</a></li>

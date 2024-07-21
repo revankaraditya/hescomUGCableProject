@@ -28,8 +28,8 @@
 										</div-->
 										<!--Counter Starts -->
 										<div class="container">
-											<div class="row">
-												<div class="col-md-3 col-sm-6">
+											<div class="row flex-container">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter blue">
 														<div class="counter-icon">
 															<i class="fa fa-solid fa-file"></i>
@@ -39,7 +39,7 @@
 															class="counter-value"><?php echo $fault_total_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter orange">
 														<div class="counter-icon">
 															<i class="fa fa-light fa-file"></i>
@@ -49,7 +49,7 @@
 															class="counter-value"><?php echo $fault_ongoing_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter green">
 														<div class="counter-icon">
 															<i class="fa fa-duotone fa-file"></i>

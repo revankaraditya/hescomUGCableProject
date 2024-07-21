@@ -65,8 +65,67 @@ $login_query_result = db_one($loggen_in_query);
 			background-position: center;
 			z-index: 10000000;
 			opacity: 0.4;
+
 		}
+
+		.flex-container {
+            display: flex;
+			padding: inherit;
+            flex-wrap: wrap; /* Allows items to wrap into a new line */
+            gap: 20px; /* Adjust the value to your desired spacing */
+			align-items: center;
+            justify-content: center; /* Centers the items horizontally */
+        }
+        .flex-item {
+            flex: 1 1 200px; /* Grow, shrink, and set a minimum width */
+            min-width: 200px; /* Ensures each item has a minimum width */
+            padding: 20px;
+            /* background-color: lightcoral; */
+            text-align: center;
+        }
+        .total-faults { background-color: lightblue; }
+        .ongoing-faults { background-color: orange; }
+        .completed-faults { background-color: lightgreen; }
+
+		@media (min-width: 1200px) {
+        	.container {
+            	width: inherit;
+			}
+			.cont{
+				width: inherit;
+				font-size: inherit;
+			}
+		}
+
+		/* Adjustments for smaller screens */
+		@media (min-width: 768px) {
+			.container{
+				width: inherit;
+			}
+			.cont{
+				width: inherit;
+				font-size: inherit;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.container{
+				width: inherit;
+			}
+			.cont{
+				width: inherit;
+				font-size: inherit;
+			}
+		}
+
+		.compl{
+			display: flex;
+			flex-direction: column;
+		}
+    
 	</style>
+
+
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -76,7 +135,7 @@ $login_query_result = db_one($loggen_in_query);
 		<div class="content-wrapper">
 			<section class="content">
 				<div class="row">
-					<section class="col-lg-12 connectedSortable">
+					<section class="col-lg-12 compl  connectedSortable">
 					<?php 
 						if ($login_query_result['UTNO'] == 1) {
 							include('supervisor_index.php');

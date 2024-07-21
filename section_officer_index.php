@@ -87,7 +87,7 @@
 											<!--button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button-->
 										</div>
 									</div>
-									<div class="box-body">
+									<div class="box-body" style="overflow:auto">
 										<?php
 										$fault_total_count_query = "SELECT COUNT(*) AS fault_count FROM fault_records WHERE UID=" . $uid . ";";
 										$fault_total_count = db_one($fault_total_count_query);
@@ -99,8 +99,8 @@
 										$fault_completed_count = db_one($fault_Completed_count_query);
 										?>
 										<div class="container">
-											<div class="row">
-												<div class="col-md-3 col-sm-6">
+											<div class="row flex-container">
+												<div class="col-md-3  col-sm-6 flex-item">
 													<div class="counter blue">
 														<div class="counter-icon">
 															<i class="fa fa-solid fa-file"></i>
@@ -110,7 +110,7 @@
 															class="counter-value"><?php echo $fault_total_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter orange">
 														<div class="counter-icon">
 															<i class="fa fa-light fa-file"></i>
@@ -120,7 +120,7 @@
 															class="counter-value"><?php echo $fault_ongoing_count['fault_count'] ?></span>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6">
+												<div class="col-md-3 col-sm-6 flex-item">
 													<div class="counter green">
 														<div class="counter-icon">
 															<i class="fa fa-duotone fa-file"></i>
@@ -171,3 +171,5 @@
 									</div>
 								</div>
 							</div>
+
+						
